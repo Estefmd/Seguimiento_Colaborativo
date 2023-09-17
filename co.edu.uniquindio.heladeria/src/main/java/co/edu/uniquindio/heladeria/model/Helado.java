@@ -11,6 +11,15 @@ public class Helado {
     private int stockAlmacen;
     private double precioTotal;
 
+    public void mostrarInformacion(){
+        String informacion = "Sabor: " +getSabor()+"\n"+
+                "Tipo de cono: "+getTipoCono()+"\n"+
+                "Topping adicional: "+getAdicionalTopping()+"\n"+
+                "Cantidad de bolas: "+getCantidadBolas()+"\n"+
+                "Stock almacen: "+getStockAlmacen()+"\n"+
+                "Precio: "+getPrecioTotal()+"\n";
+        System.out.println(informacion);
+    }
     public Helado(Sabor sabor, TipoCono tipoCono, AdicionalTopping adicionalTopping, int cantidadBolas, int stockAlmacen, double precioTotal) {
         this.sabor = sabor;
         this.tipoCono = tipoCono;
